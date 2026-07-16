@@ -6,6 +6,7 @@ This document outlines the step-by-step process for deploying two tier (Flask - 
 
 ### **2. Architecture Diagram**
 
+```
 +-----------------+      +----------------------+      +-----------------------------+
 |   Developer     |----->|     GitHub Repo      |----->|        Jenkins Server       |
 | (pushes code)   |      | (Source Code Mgmt)   |      |  (on AWS EC2)               |
@@ -29,7 +30,8 @@ This document outlines the step-by-step process for deploying two tier (Flask - 
                                                        | +-------------------------+ |
                                                        | | Docker Container: MySQL | |
                                                        | +-------------------------+ |
-
+                                                       +-----------------------------+
+```
 
 ---
 
