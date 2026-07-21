@@ -52,3 +52,34 @@ This document outlines the step-by-step process for deploying two tier (Flask - 
 
 <img width="1566" height="691" alt="Screenshot 2026-07-16 204645" src="https://github.com/user-attachments/assets/053c201a-7c35-439c-96b6-e8a1113be5bb" />
 
+
+3. Connect to EC2 Instance:
+ * Use SSH to connect to the instance's public IP address.
+     ```bash
+    ssh -i /path/to/key.pem ubuntu@<ec2-public-ip>
+    ```
+### **4. Step 2: Install Dependencies on EC2**
+
+1.  **Update System Packages:**
+    ```bash
+    sudo apt update && sudo apt upgrade -y
+    ```
+
+2.  **Install Git, Docker, and Docker Compose:**
+    ```bash
+    sudo apt install git docker.io docker-compose-v2 -y
+    ```
+
+3.  **Start and Enable Docker:**
+    ```bash
+    sudo systemctl start docker
+    sudo systemctl enable docker
+    ```
+
+4.  **Add User to Docker Group (to run docker without sudo):**
+    ```bash
+    sudo usermod -aG docker $USER
+    newgrp docker
+    ```
+
+---
