@@ -1,3 +1,4 @@
+
 # DevOps-TwoTierApplication
 Deploying two-tier application on aws
 
@@ -38,3 +39,5 @@ This document outlines the step-by-step process for deploying two tier (Flask - 
 ### **3. Step 1 : AWS EC2 Instance preparation**
 1. Launch EC2 Instance:
   Navigate to EC2 console -- Launch new instance using ubuntu -- Select t2.micro instance type for free tier eligibility -- Create and assign a new key pair for ssh access
+
+  <img width="1180" height="552" alt="Screenshot 2026-07-16 204010" src="https://github.com/user-attachments/assets/8a8af8e9-da56-4617-9f92-9f81b01a0466" />
